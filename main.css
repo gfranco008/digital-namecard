@@ -32,16 +32,18 @@ img {
     object-fit: contain;
 }
 
-img.profile-pic {
+/* img.profile-pic {
 	height: 30%;
 	width: 30%;
 	object-fit: cover;
 	border-radius: 50%;
-}
+} */
 
 .container {
-	margin: 0 auto;
+	margin-left: auto;
+    margin-right: auto;
 	position: relative;
+
 	height: 100%;
 }
 
@@ -106,6 +108,7 @@ img.profile-pic {
 .col.is-8 {
 	flex: none;
 	width: 80%;
+	justify-content: center;
 }
 
 .col.is-9 {
@@ -123,11 +126,11 @@ img.profile-pic {
 }
 
 .banner {
-	height: 30%;
+	height: 40%;
 }
 
 .primary-info {
-	height: 15%;
+	height: 25%;
 }
 
 .secondary-info {
@@ -138,29 +141,51 @@ img.profile-pic {
 	background-color: #F2F2F2;
 }
 
+.bg-color-black {
+	background-color: #0d0c0c;
+}
+
 .bg-color-white {
 	background-color: white;
 }
 
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
 .text-name {
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #0c4177;
-    font-size: 20px;
+    font-weight: 600;
+	text-align: center;
+    color: #000000;
+    font-size: 30px;
 }
 
 .text-title-company {
     font-family: 'Lato', sans-serif;
-    font-weight: 200;
-    color: #0c4177;
-    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    font-size: 20px;
+	text-align: center;
 }
 
 .text-detail {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #0c4177;
-    font-size: 12px;
+    color: #000000;
+    font-size: 14px;
+	/* text-align: center; */
+}
+
+.text-detail-left {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    font-size: 14px;
+	text-align: left;
 }
 
 .bottom {
@@ -168,7 +193,7 @@ img.profile-pic {
 }
 
 .button {
-	background-color: #0c4177;
+	background-color: #964b00;
 	height: 48px;
 	padding-left: 24px
 	padding-right: 24px;
@@ -176,14 +201,14 @@ img.profile-pic {
 	vertical-align: middle;
 	line-height: 48px;
 	font-family: 'Muli', sans-serif;
-	color: white;
+	color: black;
 	font-weight: 300;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   img.profile-pic {
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
   }
 }
 
